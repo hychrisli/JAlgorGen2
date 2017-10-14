@@ -1,7 +1,6 @@
 package jalgor_gen2.leetcode;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class Q073Test_SetMatrixZeros extends AbstractTest<int[][]> {
