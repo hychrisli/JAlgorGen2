@@ -1,5 +1,9 @@
 package jalgor_gen2.leetcode;
 
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
+
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 
@@ -19,4 +23,7 @@ public abstract class AbstractTest<T> {
 		Assert.assertThat(actual, CoreMatchers.equalTo(expected));
 	}
 	
+	protected void testSetEqualTo(Set<?> expected, Set<?> actual){
+		Assert.assertThat(actual, CoreMatchers.equalTo(expected));
+	}
 }
