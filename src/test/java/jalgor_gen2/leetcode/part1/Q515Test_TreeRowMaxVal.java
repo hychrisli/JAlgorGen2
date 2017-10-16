@@ -1,6 +1,5 @@
 package jalgor_gen2.leetcode.part1;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,9 +22,38 @@ public class Q515Test_TreeRowMaxVal extends AbstractTest<List<Integer>> {
 	public void test1(){
 		String[] vals = {"1", "3", "2", "5", "3", "#", "9"};
 		TreeNode tree = TreeNodeMapper.toTreeNode(vals);
-		List<Integer> output = Arrays.asList(new Integer[]{1, 3, 5});
+		List<Integer> output = Arrays.asList(new Integer[]{1, 3, 9});
+		
+		this.baseTest(output, sol.largestValues(tree));
+	}
+	
+	@Test
+	public void test2(){
+		String[] vals = {"1", "3"};
+		TreeNode tree = TreeNodeMapper.toTreeNode(vals);
+		List<Integer> output = Arrays.asList(new Integer[]{1, 3});
 		
 		this.baseTest(output, sol.largestValues(tree));
 	}
 
+	
+	@Test
+	public void test3(){
+		String[] vals = {"3"};
+		TreeNode tree = TreeNodeMapper.toTreeNode(vals);
+		List<Integer> output = Arrays.asList(new Integer[]{3});
+		
+		this.baseTest(output, sol.largestValues(tree));
+	}
+	
+	
+	@Test
+	public void test4(){
+		String[] vals = {};
+		TreeNode tree = TreeNodeMapper.toTreeNode(vals);
+		List<Integer> output = Arrays.asList(new Integer[0]);
+		
+		this.baseTest(output, sol.largestValues(tree));
+	}
+	
 }
