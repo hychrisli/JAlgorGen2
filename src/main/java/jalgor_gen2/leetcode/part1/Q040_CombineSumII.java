@@ -1,8 +1,10 @@
-package jalgor_gen2.leetcode;
+package jalgor_gen2.leetcode.part1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import jalgor_gen2.leetcode.Solution;
 
 public class Q040_CombineSumII extends Solution {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {

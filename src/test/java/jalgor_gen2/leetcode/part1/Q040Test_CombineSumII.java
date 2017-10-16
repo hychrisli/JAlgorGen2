@@ -1,4 +1,4 @@
-package jalgor_gen2.leetcode;
+package jalgor_gen2.leetcode.part1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,6 +8,9 @@ import java.util.List;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
+
+import jalgor_gen2.leetcode.AbstractTest;
+import jalgor_gen2.leetcode.part1.Q040_CombineSumII;
 
 public class Q040Test_CombineSumII extends AbstractTest<List<List<Integer>>> {
 

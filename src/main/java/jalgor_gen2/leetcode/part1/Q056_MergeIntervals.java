@@ -1,9 +1,10 @@
-package jalgor_gen2.leetcode;
+package jalgor_gen2.leetcode.part1;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import jalgor_gen2.leetcode.Solution;
 import structure.Interval;
 
 public class Q056_MergeIntervals extends Solution {

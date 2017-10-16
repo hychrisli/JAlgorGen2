@@ -1,6 +1,8 @@
-package jalgor_gen2.leetcode;
+package jalgor_gen2.leetcode.part1;
 
 import java.util.Arrays;
+
+import jalgor_gen2.leetcode.Solution;
 
 public class Q667_BeautifulArrangeII extends Solution {
     

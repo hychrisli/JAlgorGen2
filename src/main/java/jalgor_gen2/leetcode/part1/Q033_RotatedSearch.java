@@ -1,4 +1,6 @@
-package jalgor_gen2.leetcode;
+package jalgor_gen2.leetcode.part1;
+
+import jalgor_gen2.leetcode.Solution;
 
 public class Q033_RotatedSearch extends Solution {
     public int search(int[] nums, int target) {

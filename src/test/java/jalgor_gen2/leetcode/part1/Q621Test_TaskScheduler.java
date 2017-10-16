@@ -1,7 +1,10 @@
-package jalgor_gen2.leetcode;
+package jalgor_gen2.leetcode.part1;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import jalgor_gen2.leetcode.AbstractTest;
+import jalgor_gen2.leetcode.part1.Q621_TaskScheduler;
 
 public class Q621Test_TaskScheduler extends AbstractTest<Integer> {
 

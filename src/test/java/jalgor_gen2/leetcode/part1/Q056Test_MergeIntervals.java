@@ -1,4 +1,4 @@
-package jalgor_gen2.leetcode;
+package jalgor_gen2.leetcode.part1;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 
@@ -8,6 +8,8 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
+import jalgor_gen2.leetcode.AbstractTest;
+import jalgor_gen2.leetcode.part1.Q056_MergeIntervals;
 import structure.Interval;
 
 public class Q056Test_MergeIntervals extends AbstractTest<List<Interval>> {
