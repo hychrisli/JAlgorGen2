@@ -1,4 +1,4 @@
-package structure;
+package jalgor_gen2.structure;
 
 public class Interval {
 	public int start;

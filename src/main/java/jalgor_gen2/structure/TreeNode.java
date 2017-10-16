@@ -1,4 +1,4 @@
-package structure;
+package jalgor_gen2.structure;
 
 public class TreeNode {
     public int val;
@@ -6,8 +6,8 @@ public class TreeNode {
     public TreeNode right;
     public TreeNode(int x) { val = x; }
     
-    public void print() {
-        System.out.print(toString("", true));
+    public String print() {
+        return toString("", true);
     }
     
     public String toString(String prefix, boolean isTail) {

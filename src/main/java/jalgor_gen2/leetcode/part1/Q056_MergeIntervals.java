@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 import jalgor_gen2.leetcode.Solution;
-import structure.Interval;
+import jalgor_gen2.structure.Interval;
 
 public class Q056_MergeIntervals extends Solution {
     public List<Interval> merge(List<Interval> intervals) {
