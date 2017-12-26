@@ -6,7 +6,7 @@ public class TreeNode {
     public TreeNode right;
     public TreeNode(int x) { val = x; }
     
-    public String print() {
+    public String toString() {
         return toString("", true);
     }
     
