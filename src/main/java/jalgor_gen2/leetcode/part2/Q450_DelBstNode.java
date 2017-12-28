@@ -7,33 +7,33 @@ public class Q450_DelBstNode extends Solution {
 
     // recursive
     public TreeNode deleteNode(TreeNode root, int key) {
-     
-	if ( root == null ) return null;
-	
-	if ( root.val > key)
+
+	if (root == null)
+	    return null;
+
+	if (root.val > key)
 	    root.left = deleteNode(root.left, key);
-	else if ( root.val < key)
+	else if (root.val < key)
 	    root.right = deleteNode(root.right, key);
 	else {
-	    
-	    if ( root.left == null ) return root.right;
-	    if ( root.right == null ) return root.left;
-	    
+
+	    if (root.left == null)
+		return root.right;
+	    if (root.right == null)
+		return root.left;
+
 	    TreeNode next = root.right;
-	    while ( next.left != null )  next = next.left;
-	    
+	    while (next.left != null)
+		next = next.left;
 	    next.left = root.left;
-	    
 	    return root.right;
-	    
 	}
-	
 	return root;
     }
-    
+
     // iterative
     public TreeNode deleteNodeV1(TreeNode root, int key) {
-	
+
 	TreeNode curNode = root, head = new TreeNode(0), pNode = head;
 	boolean isPLeft = false;
 	pNode.right = root;
@@ -80,18 +80,20 @@ public class Q450_DelBstNode extends Solution {
 		next.left = curNode.left;
 		next.right = curNode.right;
 	    }
-	    
+
 	    replace(pNode, next, isPLeft);
 	}
 
 	// System.out.println(head.right.toString());
-	
+
 	return head.right;
     }
-    
-    private static void replace(TreeNode p, TreeNode child, boolean isLeft){
-	if (isLeft) p.left = child;
-	else p.right = child;
+
+    private static void replace(TreeNode p, TreeNode child, boolean isLeft) {
+	if (isLeft)
+	    p.left = child;
+	else
+	    p.right = child;
     }
 
 }
