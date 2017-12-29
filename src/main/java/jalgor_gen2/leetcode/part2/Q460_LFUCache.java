@@ -12,11 +12,10 @@ public class Q460_LFUCache extends Solution {
     Map<Integer, Integer> counts = new HashMap<Integer, Integer>();
     Map<Integer, LinkedHashSet<Integer>> buckets = new HashMap<Integer, LinkedHashSet<Integer>>();
 
-    int capacity, size, minCnt;
+    int capacity, minCnt;
 
     public Q460_LFUCache(int capacity) {
 	this.capacity = capacity;
-	size = 0;
 	minCnt = 1;
     }
 
@@ -30,17 +29,16 @@ public class Q460_LFUCache extends Solution {
     public void put(int key, int value) {
 
 	if (capacity > 0) {
-	    if ( ! values.containsKey(key))
-		size += 1;
+	    
+	    values.put(key, value);
 
-	    if (size > capacity) {
+	    if (values.size() > capacity) {
 		Integer rmKey = buckets.get(minCnt).iterator().next();
 		buckets.get(minCnt).remove(rmKey);
 		values.remove(rmKey);
 		counts.remove(rmKey);
-		size -= 1;
 	    }
-	    values.put(key, value);
+
 	    update(key);
 	}
 
