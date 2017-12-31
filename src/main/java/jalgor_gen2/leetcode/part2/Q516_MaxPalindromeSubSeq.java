@@ -2,7 +2,7 @@ package jalgor_gen2.leetcode.part2;
 
 import jalgor_gen2.leetcode.Solution;
 
-public class Q516_MaxPalindromSubSeq extends Solution {
+public class Q516_MaxPalindromeSubSeq extends Solution {
 
     String s;
     int[][] lkp;

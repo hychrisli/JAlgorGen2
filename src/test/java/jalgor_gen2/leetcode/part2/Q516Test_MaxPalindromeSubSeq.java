@@ -8,7 +8,7 @@ import jalgor_gen2.leetcode.AbstractTest;
 
 public class Q516Test_MaxPalindromeSubSeq extends AbstractTest<Integer>{
 
-    Q516_MaxPalindromSubSeq sol = new Q516_MaxPalindromSubSeq();
+    Q516_MaxPalindromeSubSeq sol = new Q516_MaxPalindromeSubSeq();
     
     @Override
     protected void baseTest(Integer expected, Integer actual) {
