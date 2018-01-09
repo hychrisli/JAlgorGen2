@@ -1,7 +1,5 @@
 package jalgor_gen2.leetcode.part2;
 
-import java.util.Arrays;
-
 import jalgor_gen2.leetcode.Solution;
 
 public class Q274_HIndex extends Solution{
