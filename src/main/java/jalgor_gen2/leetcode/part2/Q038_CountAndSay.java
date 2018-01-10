@@ -1,7 +1,5 @@
 package jalgor_gen2.leetcode.part2;
 
-import java.util.stream.IntStream;
-
 public class Q038_CountAndSay {
     public String countAndSay(int n) {
 
